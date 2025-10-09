@@ -1,0 +1,78 @@
+#board, .boardInfo {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+    background-color: #2a2d3e;
+    padding: 6px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+#start, .boardInfo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#start {
+    background-color: #f35a69;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#start:hover {
+    background-color: #ff6f7d;
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+#gameOver {
+    display: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4757;
+    margin-top: 12px;
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    padding: 8px 0;
+    color: #eee;
+}
+
+#scoreBoard {
+    display: inline-flex;
+    gap: 8px;
+}
+
+.square {
+    aspect-ratio: 1;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.emptySquare {
+    background-color: #3a3f68;
+}
+
+.snakeSquare {
+    background-color: #f1f779;
+    border: 1px solid #222;
+}
+
+.foodSquare {
+    background-color: #55e7e7;
+    border: 1px solid #222;
+}
